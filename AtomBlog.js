@@ -5,22 +5,14 @@ $(function() {
 	function AB_parseEntries(entryXML) {
 		entries = [];
 		entryXML.each(function(index,entry) {
-			console.log($(entry));
 			entries.push($(entry));
 		});
 		entries.sort(function(a,b) {
 			var aDateStr = a.children('updated').text();
-			console.log(aDateStr)
 			var aDate = new Date(aDateStr);
-			console.log(aDate);
 
 			var bDateStr = b.children('updated').text();
-			console.log(bDateStr);
 			var bDate = new Date(bDateStr);
-			console.log(bDate);
-
-			console.log(aDate - bDate);
-			
 			return bDate - aDate;
 		});
 	}
@@ -53,11 +45,9 @@ $(function() {
 		$('.nextLink').text('');
 		$('.prevLink').text('');
 		if(index - 1 >= 0) {
-			console.log('Adding next link');
 			nextLink.appendTo('.nextLink');
 		}
 		if(index + 1 < entries.length) {
-			console.log('Adding previous link');
 			prevLink.appendTo('.prevLink');
 		}
 	}
@@ -66,7 +56,6 @@ $(function() {
 		$.get(params.content, function(data) {
 			var feed = $(data).find('feed');
 			var blogTitle = feed.children('title').text();
-			console.log('blog.title: ' + blogTitle);
 			$('#title').text(blogTitle);
 			AB_parseEntries(feed.children('entry'));
 			AB_loadEntry(0);
