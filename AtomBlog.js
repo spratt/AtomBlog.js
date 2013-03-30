@@ -1,6 +1,13 @@
 $(function() {
+	var blogTitle = '';
 	var entries = null;
 	var index = -1;
+	var baseURL = window.location.toString();
+	var query = window.location.search.substr(1);
+
+	if(query.length > 0) {
+		baseURL = baseURL.substring(0,baseURL.indexOf('?'));
+	}
 
 	function AB_parseEntries(entryXML) {
 		entries = [];
@@ -31,8 +38,14 @@ $(function() {
 		var entry = entries[index];
 
 		$('#date').text(entry.children('updated').text());
-		$('#entryTitle').text(entry.children('title').text());
 		$('#entryText').html(entry.children('content').children('div').html());
+
+		var entryTitle = entry.children('title').text();
+		$('#entryTitle').text(entryTitle);
+
+		window.history.pushState(null,
+								 blogTitle + ' - ' + entryTitle,
+								 baseURL + '?' + entry.children('id').text());
 
 		// author link
 		$('#author').text('Written by: ');
@@ -68,7 +81,6 @@ $(function() {
 			var blogTitle = feed.children('title').text();
 			$('#title').text(blogTitle);
 			AB_parseEntries(feed.children('entry'));
-			var query = window.location.search.substr(1);
 			if(query.length === 0) AB_loadEntry(0);
 			else AB_loadEntry(AB_getIndexWithID(query));
 		});
