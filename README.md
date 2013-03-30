@@ -19,5 +19,5 @@ each entry id be unique within the scope of your blog.
 
 ## License
 
-AtomBlog.js is licensed under the terms of the ISIC license.  For more
+AtomBlog.js is licensed under the terms of the ISC license.  For more
 information, see LICENSE.
