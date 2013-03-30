@@ -31,7 +31,8 @@ $(function() {
 		var entry = entries[index];
 
 		$('#date').text(entry.children('updated').text());
-		$('#content').html(entry.children('content').children('div').html());
+		$('#entryTitle').text(entry.children('title').text());
+		$('#entryText').html(entry.children('content').children('div').html());
 
 		// author link
 		$('#author').text('Written by: ');
