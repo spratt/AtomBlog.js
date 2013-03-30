@@ -69,7 +69,7 @@ $(function() {
 	}
 
 	function AB_getIndexWithID(id) {
-		var ret = -1;
+		var ret = 0;
 		entries.forEach(function(value,index) {
 			if(value.children('id').text() === id)
 				ret = index;
