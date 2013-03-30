@@ -43,8 +43,10 @@ $(function() {
 		var entryTitle = entry.children('title').text();
 		$('#entryTitle').text(entryTitle);
 
+		var pageTitle = blogTitle + ' - ' + entryTitle;
+		document.title = pageTitle;
 		window.history.pushState(null,
-								 blogTitle + ' - ' + entryTitle,
+								 pageTitle,
 								 baseURL + '?' + entry.children('id').text());
 
 		// author link
@@ -78,7 +80,7 @@ $(function() {
 	window.AtomBlog = function AtomBlog(params) {
 		$.get(params.content, function(data) {
 			var feed = $(data).find('feed');
-			var blogTitle = feed.children('title').text();
+			blogTitle = feed.children('title').text();
 			$('#title').text(blogTitle);
 			AB_parseEntries(feed.children('entry'));
 			if(query.length === 0) AB_loadEntry(0);
