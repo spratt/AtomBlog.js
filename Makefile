@@ -1,6 +1,6 @@
 .PHONY: test clean
 
-test: install
+test: 
 	python -m SimpleHTTPServer
 
 clean:
