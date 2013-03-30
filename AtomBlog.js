@@ -39,6 +39,7 @@ $(function() {
 
 		$('#date').text(entry.children('updated').text());
 		$('#entryText').html(entry.children('content').children('div').html());
+		$('#rights').html(entry.children('rights').children('div').html());
 
 		var entryTitle = entry.children('title').text();
 		$('#entryTitle').text(entryTitle);
