@@ -1,0 +1,26 @@
+body {
+	background: rgb(244, 238, 217);
+	font-family: Cambria,"Hoefler Text",Georgia,"Times New Roman",serif;
+}
+
+#container, #header {
+	max-width: 940px;
+	margin: 0px auto;
+	color: rgb(29, 25, 22);
+	margin-bottom: 0.5cm;
+}
+
+#content {
+	max-width: 800px;
+	margin: 0px auto;
+	line-height: 1.5;
+	font-size: 1.2em;
+}
+
+#author, #date, .prevLink {
+	display: inline;
+}
+
+#date, .nextLink {
+	float: right;
+}
