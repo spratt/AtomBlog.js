@@ -52,6 +52,15 @@ $(function() {
 			prevLink.appendTo('.prevLink');
 		}
 	}
+
+	function AB_getIndexWithID(id) {
+		var ret = -1;
+		entries.forEach(function(value,index) {
+			if(value.children('id').text() === id)
+				ret = index;
+		});
+		return ret;
+	}
 	
 	window.AtomBlog = function AtomBlog(params) {
 		$.get(params.content, function(data) {
@@ -59,7 +68,9 @@ $(function() {
 			var blogTitle = feed.children('title').text();
 			$('#title').text(blogTitle);
 			AB_parseEntries(feed.children('entry'));
-			AB_loadEntry(0);
+			var query = window.location.search.substr(1);
+			if(query.length === 0) AB_loadEntry(0);
+			else AB_loadEntry(AB_getIndexWithID(query));
 		});
 	};
 
