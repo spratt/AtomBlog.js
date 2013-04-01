@@ -30,8 +30,9 @@ body {
 	float: right;
 }
 
-a, a:visited {
+a, a:active, a:hover, a:focus {
 	color: rgb(156, 0, 1);
+	text-decoration: none;
 }
 
 h1 {
