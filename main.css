@@ -13,11 +13,11 @@ body {
 }
 
 #container, #header {
-	max-width: 940px;
+	max-width: 60em;
 }
 
 #content {
-	max-width: 800px;
+	max-width: 33em;
 	line-height: 1.5;
 	font-size: 1.2em;
 }
