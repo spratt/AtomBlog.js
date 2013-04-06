@@ -8,18 +8,14 @@ body {
 	margin-bottom: 1cm;
 }
 
-#container, #header, #content {
+#container {
 	margin: 0px auto;
-}
-
-#container, #header {
-	max-width: 60em;
+	font-size: 1.2em;
+	max-width: 33em;
 }
 
 #content {
-	max-width: 33em;
 	line-height: 1.5;
-	font-size: 1.2em;
 }
 
 #title, #author, #date, .prevLink {
@@ -50,6 +46,12 @@ br {
 	margin-bottom: 0.2cm;
 }
 
-#header > a {
-	margin-left: 0.2cm;
+#links > a {
+	margin-right: 0.2cm;
 }
+
+/* bootstrap icons */
+
+[class^="icon-"],[class*=" icon-"]{display:inline-block;width:14px;height:14px;*margin-right:.3em;line-height:14px;vertical-align:text-top;background-image:url("glyphicons-halflings.png");background-position:14px 14px;background-repeat:no-repeat;margin-top:1px;}
+.icon-arrow-left{background-position:-240px -96px;}
+.icon-arrow-right{background-position:-264px -96px;}

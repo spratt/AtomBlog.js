@@ -24,12 +24,10 @@ $(function() {
 		});
 	}
 
-	var nextLink = $('<a>');
+	var nextLink = $('.nextLink');
 	nextLink.attr('href','javascript:AtomBlog.nextEntry()');
-	nextLink.text('Next Entry ->');
-	var prevLink = $('<a>');
+	var prevLink = $('.prevLink');
 	prevLink.attr('href','javascript:AtomBlog.prevEntry()');
-	prevLink.text('<- Previous Entry');
 
 	function AB_loadEntry(new_index) {
 		if(entries === null) return;
@@ -59,13 +57,15 @@ $(function() {
 		authorLink.appendTo('#author');
 
 		// links
-		$('.nextLink').text('');
-		$('.prevLink').text('');
 		if(index - 1 >= 0) {
-			nextLink.appendTo('.nextLink');
+			nextLink.show();
+		} else {
+			nextLink.hide();
 		}
 		if(index + 1 < entries.length) {
-			prevLink.appendTo('.prevLink');
+			prevLink.show();
+		} else {
+			prevLink.hide();
 		}
 	}
 
