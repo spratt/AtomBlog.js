@@ -10,8 +10,8 @@ body {
 
 #container {
 	margin: 0px auto;
-	font-size: 1.2em;
-	max-width: 33em;
+	font-size: 1.4em;
+	max-width: 30em;
 }
 
 #content {
@@ -22,11 +22,15 @@ body {
 	display: inline;
 }
 
+.nextLink, .prevLink, #author, #date, #rights {
+	font-size: 0.8em;
+}
+
 #date, .nextLink {
 	float: right;
 }
 
-a, a:active, a:hover, a:focus {
+a {
 	color: rgb(156, 0, 1);
 }
 
