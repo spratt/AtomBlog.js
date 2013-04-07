@@ -42,6 +42,9 @@ $(function() {
 		var entryTitle = entry.children('title').text();
 		$('#entryTitle').text(entryTitle);
 
+		var subTitle = entry.children('summary').text();
+		$('#subTitle').text(subTitle);
+
 		var pageTitle = blogTitle + ' - ' + entryTitle;
 		document.title = pageTitle;
 		window.history.pushState(null,
