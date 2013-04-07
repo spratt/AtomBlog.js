@@ -49,7 +49,7 @@ $(function() {
 		document.title = pageTitle;
 		window.history.pushState(null,
 								 pageTitle,
-								 baseURL + '?' + entry.children('id').text());
+								 baseURL + '?' + entry.children('AtomBlogID').text());
 
 		// author link
 		$('#author').text('Written by: ');
@@ -75,7 +75,8 @@ $(function() {
 	function AB_getIndexWithID(id) {
 		var ret = 0;
 		entries.forEach(function(value,index) {
-			if(value.children('id').text() === id)
+			var AtomBlogID = value.children('AtomBlogID').text();
+			if(AtomBlogID === id)
 				ret = index;
 		});
 		return ret;

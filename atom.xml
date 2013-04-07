@@ -15,6 +15,7 @@
     <link rel="alternate" type="text/html" href="http://example.org/2003/12/13/atom03.html"/>
     <link rel="edit" href="http://example.org/2003/12/13/atom03/edit"/>
     <id>urn:uuid:3dd3ba04-9953-11e2-8852-76ecf046605f</id>
+    <AtomBlogID>bloggin-using-atom-part-1</AtomBlogID>
     <updated>2013-03-30T16:14:36Z</updated>
     <summary>In which we discuss building a blogging platform using Atom and Javascript</summary>
     <author>
@@ -51,6 +52,7 @@
     <link rel="alternate" type="text/html" href="http://example.org/2003/12/13/atom03.html"/>
     <link rel="edit" href="http://example.org/2003/12/13/atom03/edit"/>
     <id>urn:uuid:0aafbab4-9945-11e2-b504-63477188419e</id>
+    <AtomBlogID>bloggin-using-atom-part-2</AtomBlogID>
     <updated>2013-03-30T16:18:53Z</updated>
     <summary>In which we discuss building a blogging platform using Atom and Javascript</summary>
     <author>
