@@ -57,6 +57,11 @@ h1 {
 	font-style: italic;
 }
 
+#entryText {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
 br {
 	margin-bottom: 0.2cm;
 }
