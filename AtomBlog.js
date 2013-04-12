@@ -59,15 +59,15 @@ $(function() {
 
 		// links
 		if(index - 1 >= 0) {
-			var next_entry = entries[index-1];
-			nextLink.attr('href',next_entry.children('link').text());
+			var next_entry = entries[index-1].children('link').first();
+			nextLink.attr('href',next_entry.attr('href'));
 			nextLink.show();
 		} else {
 			nextLink.hide();
 		}
 		if(index + 1 < entries.length) {
-			var prev_entry = entries[index+1];
-			prevLink.attr('href',prev_entry.children('link').text());
+			var prev_entry = entries[index+1].children('link').first();
+			prevLink.attr('href',prev_entry.attr('href'));
 			prevLink.show();
 		} else {
 			prevLink.hide();
