@@ -25,9 +25,7 @@ $(function() {
 	}
 
 	var nextLink = $('.nextLink');
-	nextLink.attr('href','javascript:AtomBlog.nextEntry()');
 	var prevLink = $('.prevLink');
-	prevLink.attr('href','javascript:AtomBlog.prevEntry()');
 
 	function AB_loadEntry(new_index) {
 		if(entries === null) return;
@@ -61,11 +59,15 @@ $(function() {
 
 		// links
 		if(index - 1 >= 0) {
+			var next_entry = entries[index-1];
+			nextLink.attr('href',next_entry.children('link').text());
 			nextLink.show();
 		} else {
 			nextLink.hide();
 		}
 		if(index + 1 < entries.length) {
+			var prev_entry = entries[index+1];
+			prevLink.attr('href',prev_entry.children('link').text());
 			prevLink.show();
 		} else {
 			prevLink.hide();
@@ -95,9 +97,14 @@ $(function() {
 
 	window.AtomBlog.nextEntry = function AB_nextEntry() {
 		AB_loadEntry(index-1);
+		return false;
 	};
 
 	window.AtomBlog.prevEntry = function AB_prevEntry() {
 		AB_loadEntry(index+1);
+		return false;
 	};
+	
+	nextLink.click(AtomBlog.nextEntry);
+	prevLink.click(AtomBlog.prevEntry);
 });
