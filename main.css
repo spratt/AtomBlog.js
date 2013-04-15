@@ -16,6 +16,7 @@ body {
 	margin: 0px auto;
 	font-size: 1.4em;
 	max-width: 30em;
+	min-width: 21em;
 }
 
 /* more comfortable entry text spacing */
@@ -26,7 +27,7 @@ body {
 
 /* no newline after title, author, date, and prev */
 
-#title, #author, #date, .prevLink {
+#title, #author, #date, #links, .prevLink {
 	display: inline;
 }
 
@@ -58,10 +59,22 @@ a:hover {
 	text-decoration: underline;
 }
 
-/* big blog title */
+/* small blog title */
 
 h1 {
-	font-size: 2.5em;
+	font-size: 1em;
+}
+
+/* spacing between header links */
+
+#links > a {
+	margin-right: 0.2cm;
+}
+
+/* extra spacing after header */
+
+header {
+	margin-bottom: 0.5cm;
 }
 
 /* put entry title closer to subtitle */
@@ -84,12 +97,6 @@ h1 {
 #entryText {
 	text-align: justify;
 	text-justify: inter-word;
-}
-
-/* spacing between header links */
-
-#links > a {
-	margin-right: 0.2cm;
 }
 
 /* drop cap */
