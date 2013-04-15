@@ -104,7 +104,7 @@ header {
 #entryText > p:first-child:first-letter {
 	font-size: 6em;
 	float: left;
-	margin-right: 0.1em;
+	margin-right: 0.05em;
 }
 
 /* bootstrap arrow icons */
