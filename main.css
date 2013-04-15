@@ -67,7 +67,7 @@ h1 {
 
 /* spacing between header links */
 
-#links > a {
+header a {
 	margin-right: 0.2cm;
 }
 
