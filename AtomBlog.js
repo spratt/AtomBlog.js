@@ -75,11 +75,16 @@ $(function() {
 	}
 
 	function AB_getIndexWithID(id) {
+		// remove trailing slashes
+		while(id.endsWith('/')) {
+			id = id.substring(0,id.length-1);
+		}
 		var ret = 0;
 		entries.forEach(function(value,index) {
 			var AtomBlogID = value.children('AtomBlogID').text();
-			if(AtomBlogID === id)
+			if(AtomBlogID === id) {
 				ret = index;
+			}
 		});
 		return ret;
 	}

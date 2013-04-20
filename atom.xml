@@ -4,19 +4,17 @@
  
   <title>AtomBlog.js</title>
   <subtitle>A simple blog using javascript to parse and display an atom feed.</subtitle>
-  <link href="http://example.org/atom.xml" rel="self" />
-  <link href="http://example.org/" />
-  <id>urn:uuid:faeb0412-9944-11e2-b76b-76ecf046605f</id>
-  <updated>2003-12-13T18:30:02Z</updated>
+  <link href="http://spratt.github.io/AtomBlog.js/atom.xml" rel="self" />
+  <link href="http://spratt.github.io/AtomBlog.js/" />
+  <id>http://spratt.github.io/AtomBlog.js/</id>
+  <updated>2013-04-20T21:16:13Z</updated>
  
   <entry>
     <title>Blogging Using Atom Part 1</title>
-    <link href="http://example.org/2003/12/13/atom1" />
-    <link rel="alternate" type="text/html" href="http://example.org/2003/12/13/atom1.html"/>
-    <link rel="edit" href="http://example.org/2003/12/13/atom1/edit"/>
-    <id>urn:uuid:3dd3ba04-9953-11e2-8852-76ecf046605f</id>
+    <link rel="alternate" type="text/html" href="http://spratt.github.io/AtomBlog.js/?blogging-using-atom-part-1"/>
+    <id>http://spratt.github.io/AtomBlog.js/?blogging-using-atom-part-1</id>
     <AtomBlogID>blogging-using-atom-part-1</AtomBlogID>
-    <updated>2013-03-30T16:14:36Z</updated>
+    <updated>2013-04-20T21:16:13Z</updated>
     <summary>In which we discuss building a blogging platform using Atom and Javascript</summary>
     <author>
       <name>Simon Pratt</name>
@@ -48,12 +46,10 @@
  
   <entry>
     <title>Blogging Using Atom Part 2</title>
-    <link href="http://example.org/2003/12/13/atom2" />
-    <link rel="alternate" type="text/html" href="http://example.org/2003/12/13/atom2.html"/>
-    <link rel="edit" href="http://example.org/2003/12/13/atom2/edit"/>
-    <id>urn:uuid:43fa2504-a9e2-11e2-995b-e9def046605f</id>
+    <link rel="alternate" type="text/html" href="http://spratt.github.io/AtomBlog.js/?blogging-using-atom-part-2"/>
+    <id>http://spratt.github.io/AtomBlog.js/?blogging-using-atom-part-2</id>
     <AtomBlogID>blogging-using-atom-part-2</AtomBlogID>
-    <updated>2013-03-30T16:18:53Z</updated>
+    <updated>2013-04-20T21:16:14Z</updated>
     <summary>In which we discuss building a blogging platform using Atom and Javascript</summary>
     <author>
       <name>Simon Pratt</name>
@@ -85,12 +81,10 @@
  
   <entry>
     <title>Blogging Using Atom Part 3</title>
-    <link href="http://example.org/2003/12/13/atom3" />
-    <link rel="alternate" type="text/html" href="http://example.org/2003/12/13/atom3.html"/>
-    <link rel="edit" href="http://example.org/2003/12/13/atom3/edit"/>
-    <id>urn:uuid:0aafbab4-9945-11e2-b504-63477188419e</id>
+    <link rel="alternate" type="text/html" href="http://spratt.github.io/AtomBlog.js/?blogging-using-atom-part-3"/>
+    <id>http://spratt.github.io/AtomBlog.js/?blogging-using-atom-part-3</id>
     <AtomBlogID>blogging-using-atom-part-3</AtomBlogID>
-    <updated>2013-03-30T19:18:53Z</updated>
+    <updated>2013-04-20T21:16:15Z</updated>
     <summary>In which we discuss building a blogging platform using Atom and Javascript</summary>
     <author>
       <name>Simon Pratt</name>

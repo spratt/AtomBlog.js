@@ -32,23 +32,29 @@
           <a href="http://pr4tt.com">Author</a>
         </div>
       </header>
-      <div id="topNav">
+      <nav id="topNav">
         <a class="prevLink"><i class="icon-arrow-left"></i> Previous Entry</a>
         <a class="nextLink">Next Entry <i class="icon-arrow-right"></i></a>
-      </div>
-      <div id="content">
-        <h2 id="entryTitle"></h2>
-        <h3 id="subTitle"></h3>
-        <div id="entryText"></div>
-      </div>
-      <div id="author"></div>
-      <div id="date"></div>
-      <div id="rights"></div>
-      <a class="prevLink"><i class="icon-arrow-left"></i> Previous Entry</a>
-      <a class="nextLink">Next Entry <i class="icon-arrow-right"></i></a>
-      <a href="#" class="topLink centred"><i class="icon-arrow-up">
-        </i>Scroll to top<i class="icon-arrow-up"></i>
-      </a>
+      </nav>
+      <article id="content">
+        <hgroup>
+          <h1 id="entryTitle"></h1>
+          <h2 id="subTitle"></h2>
+        </hgroup>
+        <section id="entryText"></section>
+      </article>
+      <footer>
+        <div id="author"></div>
+        <div id="date"></div>
+        <div id="rights"></div>
+        <nav id="botNav">
+          <a class="prevLink"><i class="icon-arrow-left"></i> Previous Entry</a>
+          <a class="nextLink">Next Entry <i class="icon-arrow-right"></i></a>
+          <a href="#" class="topLink centred"><i class="icon-arrow-up">
+            </i>Scroll to top<i class="icon-arrow-up"></i>
+          </a>
+        </nav>
+      </footer>
     </div>
     <script src="jquery-1.9.1.min.js"></script>
     <script src="jquery-fallback.js"></script>
