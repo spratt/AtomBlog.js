@@ -5,8 +5,13 @@ A simple blog using javascript to parse and display an atom feed
 ## Installation
 
 Put the files in the project somewhere that will be served by a web
-server.  Get version 1.9.1 of jQuery and put it in the root directory.
-You can get this version of jQuery at the following URL:
+server.  
+
+### Optional
+
+If you would like slightly faster load times, get version 1.9.1 of
+jQuery and put it in the root directory.  You can get this version of
+jQuery at the following URL:
 
 http://code.jquery.com/jquery-1.9.1.min.js
 
