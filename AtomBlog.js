@@ -61,16 +61,16 @@ $(function() {
 		if(index - 1 >= 0) {
 			var next_entry = entries[index-1].children('link').first();
 			nextLink.attr('href',next_entry.attr('href'));
-			nextLink.show();
+			nextLink.removeClass('hidden');
 		} else {
-			nextLink.hide();
+			nextLink.addClass('hidden');
 		}
 		if(index + 1 < entries.length) {
 			var prev_entry = entries[index+1].children('link').first();
 			prevLink.attr('href',prev_entry.attr('href'));
-			prevLink.show();
+			prevLink.removeClass('hidden');
 		} else {
-			prevLink.hide();
+			prevLink.addClass('hidden');
 		}
 	}
 

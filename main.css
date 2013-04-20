@@ -10,13 +10,11 @@ body {
 	margin-bottom: 1cm;
 }
 
-/* page content is centred, bigger, and has at most 60ish characters on a line */
+/* page content is centred, bigger, and has at most 70ish characters on a line */
 
 #container {
-	margin: 0px auto;
 	font-size: 1.4em;
 	max-width: 30em;
-	min-width: 21em;
 }
 
 /* more comfortable entry text spacing */
@@ -37,10 +35,50 @@ body {
 	font-size: 0.8em;
 }
 
+/* insert a break after the top navigation */
+
+#topNav:after {
+	content: " ";
+	display:block;
+	clear: both;
+}
+
+/* add some vertical space after rights section */
+
+#rights {
+	margin-bottom: 1em;
+}
+
 /* right aligned date and next entry links */
 
 #date, .nextLink {
 	float: right;
+}
+
+/* left aligned prev entry links */
+
+.prevLink {
+	float: left;
+}
+
+/* some things should be centred */
+
+.centred {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* centre text within the topLink */
+
+.topLink {
+	display: block;
+	text-align: center;
+}
+
+/* hide an element but leave space */
+
+.hidden {
+	visibility: hidden;
 }
 
 /* red links */
@@ -112,3 +150,5 @@ header {
 [class^="icon-"],[class*=" icon-"]{display:inline-block;width:14px;height:14px;*margin-right:.3em;line-height:14px;vertical-align:text-top;background-image:url("glyphicons-halflings.png");background-position:14px 14px;background-repeat:no-repeat;margin-top:1px;}
 .icon-arrow-left{background-position:-240px -96px;}
 .icon-arrow-right{background-position:-264px -96px;}
+.icon-arrow-up {background-position: -289px -96px;}
+.icon-arrow-down {background-position: -312px -96px;}
